@@ -1,0 +1,2 @@
+# spinno
+Minimal React Spinner
