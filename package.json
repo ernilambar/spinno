@@ -1,0 +1,21 @@
+{
+  "name": "spinno",
+  "version": "1.0.0",
+  "description": "Minimal React Spinner",
+  "main": "index.jsx",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernilambar/spinno.git"
+  },
+  "keywords": ["react", "spinner"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ernilambar/spinno/issues"
+  },
+  "homepage": "https://github.com/ernilambar/spinno#readme"
+}
