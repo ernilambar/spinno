@@ -11,11 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/ernilambar/spinno.git"
   },
-  "keywords": ["react", "spinner"],
+  "keywords": [
+    "react",
+    "spinner"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ernilambar/spinno/issues"
   },
-  "homepage": "https://github.com/ernilambar/spinno#readme"
+  "homepage": "https://github.com/ernilambar/spinno#readme",
+  "dependencies": {
+    "styled-components": "^5"
+  }
 }
