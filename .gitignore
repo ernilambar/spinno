@@ -10,4 +10,4 @@ docs
 cjs
 esm
 umd
-build/*.php
+build
