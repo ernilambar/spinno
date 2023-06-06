@@ -16,16 +16,33 @@
 	"bugs": {
 		"url": "https://github.com/ernilambar/spinno/issues"
 	},
-	"type": "module",
-	"main": "build/index.js",
+	"main": "dist/index.js",
+	"browserslist": "> 1%, not dead",
+	"publishConfig": {
+		"access": "restricted"
+	},
 	"dependencies": {
 		"styled-components": "^5"
 	},
-	"devDependencies": {
-		"@wordpress/scripts": "^26.5.0"
+	"peerDependencies": {
+		"react": ">=18.2.0",
+		"react-dom": ">=18.2.0"
 	},
-  "scripts": {
-    "dev": "wp-scripts start",
-    "build": "wp-scripts build"
-  }
+	"devDependencies": {
+		"@babel/preset-env": "^7.22.4",
+		"@babel/preset-react": "^7.22.3",
+		"babel-loader": "^9.1.2",
+		"clean-webpack-plugin": "^4.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"terser-webpack-plugin": "^5.3.9",
+		"webpack": "^5.85.1",
+		"webpack-cli": "^5.1.3"
+	},
+	"scripts": {
+		"dev": "webpack --watch",
+		"build": "NODE_ENV=development webpack",
+		"prod": "NODE_ENV=production webpack",
+		"prepublish": "rm -rf ./dist && npm run build"
+	}
 }

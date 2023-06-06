@@ -19,7 +19,7 @@ const Icon = styled.span`
   }
 `
 
-export function Spinno () {
+export default function Spinno () {
   return (
     <Icon>
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>

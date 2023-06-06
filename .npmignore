@@ -11,4 +11,3 @@ cjs
 esm
 umd
 src
-build/*.php
