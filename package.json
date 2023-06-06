@@ -1,6 +1,6 @@
 {
 	"name": "spinno",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Minimal React Spinner",
 	"author": "Nilambar Sharma",
 	"license": "MIT",
@@ -17,8 +17,15 @@
 		"url": "https://github.com/ernilambar/spinno/issues"
 	},
 	"type": "module",
-	"main": "index.jsx",
+	"main": "build/index.js",
 	"dependencies": {
 		"styled-components": "^5"
-	}
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.5.0"
+	},
+  "scripts": {
+    "dev": "wp-scripts start",
+    "build": "wp-scripts build"
+  }
 }
