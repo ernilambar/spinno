@@ -1,0 +1,14 @@
+*.swp
+*~
+*.iml
+.DS_Store
+.idea
+.babelrc
+npm-debug.log
+node_modules
+docs
+cjs
+esm
+umd
+webpack.config.js
+src
