@@ -1,31 +1,52 @@
 {
-	"name": "spinno",
-	"version": "1.0.1",
-	"description": "Minimal React Spinner",
-	"author": "Nilambar Sharma",
-	"license": "MIT",
-	"keywords": [
-		"react",
-		"spinner"
-	],
-	"homepage": "https://github.com/ernilambar/spinno#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ernilambar/spinno.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ernilambar/spinno/issues"
-	},
-	"type": "module",
-	"main": "build/index.js",
-	"dependencies": {
-		"styled-components": "^5"
-	},
-	"devDependencies": {
-		"@wordpress/scripts": "^26.5.0"
-	},
+  "name": "spinno",
+  "version": "1.0.2",
+  "description": "Minimal React Spinner",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ernilambar/spinno.git"
+  },
+  "bugs": {
+    "url": "git@github.com:ernilambar/spinno.git"
+  },
   "scripts": {
-    "dev": "wp-scripts start",
-    "build": "wp-scripts build"
+    "start": "webpack --watch",
+    "build": "NODE_ENV=development webpack"
+  },
+  "keywords": [
+    "spinner",
+    "react-component"
+  ],
+  "author": "Nilambar Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/plugin-syntax-jsx": "^7.21.4",
+    "@babel/plugin-transform-react-jsx": "^7.22.3",
+    "@babel/preset-env": "^7.22.4",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack-cli": "^5.1.3"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "vue": "^3.3.4",
+    "vue-loader": "^17.2.2",
+    "webpack": "^5.85.1",
+    "styled-components": "^5"
   }
 }
