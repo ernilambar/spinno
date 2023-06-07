@@ -1,3 +1,3 @@
-import Spinno from './components/Spinno';
+import Spinno from './components/Spinno'
 
 export { Spinno }
